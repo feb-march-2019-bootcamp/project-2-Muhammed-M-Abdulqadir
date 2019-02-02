@@ -1,1 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Portfolio</title>
+
+    <style>
+        body, html {
+            display: block;
+            font-family: sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #41b3a3;
+            position: fixed;
+            height: 4em;
+            width: 100vw;
+            text-align: right;
+        }
+
+        nav ul li {
+            padding: .4em 6em;
+            list-style: none;
+            display: inline-block;
+        }
+
+        nav a {
+            text-decoration: none;
+            display: inline-block;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #e27d60;
+        }
+
+        #welcome-section {
+            padding-top: 16rem;
+            margin-bottom: -14rem;
+            width: 100%;
+            height:95.8vh;
+            background-color: #85dcb8;
+        }
+
+        #welcome-section h1{
+            color: #1f2833;
+        }
+
+        #welcome-section p{
+            color: #4056a1;
+        }
+
+        #projects {
+            padding-top: 4rem;
+            /* padding: 4rem;
+            margin: -8rem; */
+            width: 100%;
+            height: 61rem;
+            background-color:white;
+            padding-bottom: 10rem;
+        }
+
+        #contacts {
+            /* margin-top: -1.4rem; */
+            padding-top: 10rem;
+            background-color: #116466;
+            width: 100%;
+            height: 100vh;
+            margin-bottom: -10rem;
+        }
+
+        #contacts p{
+            color: #25274d;
+        }
+
+        .card-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .project-tile {
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            margin: 2rem 13rem;
+        }
+
+
+        .project-title {
+            color: #659dbd;
+            border: #ADD8E6 2px solid;
+            padding: 1rem 0;
+            font-weight: bold;
+        }
+
+        .project-title:hover{
+            color: #41b3a3;
+        }
+
+        img {
+            border: #ADD8E6 2px solid;
+            width: 100%;
+        }
+
+        #show-all{
+            text-decoration: none;
+            border: 1px solid #ADD8E6;
+            padding: .5rem 3rem;
+            background-color: #E0EBE8;
+            font-weight: bold;
+        }
+
+        #show-all:hover{
+            background-color: #41b3a3;
+        }
+
+        #social-media{
+            margin-top: 8rem;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #social-media a{
+            border-radius: 100%;
+            line-height: 100px;
+            height: 100px;
+            width: 100px;
+            border: solid 1px #90C695;
+            background-color: #aaabb8;
+            color: #116466;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #social-media a:hover{
+            background-color: #41B3A3;
+        }
+
+        footer{
+            margin-top: 2rem;
+            padding-top: 2rem;
+            height: 6rem;
+            background-color: #22313F;
+            color: white;
+        }
+
+        footer a{
+            color: white;
+        }
+
+        h2{
+            color: #123c69;
+        }
+
+        @media screen and(min-width: 973px){
+            #projects{
+                flex-basis: 50%;
+            }
+        }
+
+
+        @media screen and (max-width: 972px){
+
+            #projects{
+                width: 100%;
+            }
+
+            #contacts{
+                margin-top: 70rem;
+            }
+
+            #social-media{
+
+                flex-wrap: wrap;
+            }
+
+            #social-media a{
+                flex-basis: 25%;
+            }
+
+            #navbar ul li {
+                display: inline-block;
+                padding: .5rem 2rem;
+              
+            }
+        }
+
+        @media screen and (max-width: 530px){
+
+            #social-media a{
+                flex-basis: 50%;
+            }
+
+            #navbar ul li {
+                display: inline-block;
+                padding: .5rem .2rem;
+              
+            }
+        }
+
+        @media screen and (max-width: 367px){
+            #social-media a{
+                border-radius: 0;
+                margin: .5rem;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+
+    <nav id="navbar">
+        <ul>
+
+            <li>
+                <a href="#welcome-section">About</a>
+            </li>
+            <li>
+                <a href="#projects">Work</a>
+            </li>
+            <li>
+                <a href="#contacts">Contact</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <div id="welcome-section">
+        <h1 class="section-items">Welcome to my Portfolio</h1>
+        <p class="section-items">A Web Developer</p>
+    </div>
+
+    <div id="projects">
+
+        <h2>These are some of my projects.</h2>
+
+        <div class="card-container">
+            <a class="project-tile" href="https://codepen.io/FreeCodeCamp/pen/NNvBQW" target="blank">
+                <img src="https://cloud.githubusercontent.com/assets/15967809/17642794/d084d718-6171-11e6-83fa-ede5d0a67ad2.png"
+                    alt="men">
+
+                <div class="project-title">Tribute Page</div>
+            </a>
+
+            <a class="project-tile" href="https://codepen.io/FreeCodeCamp/pen/ONjoLe" target="blank">
+                <img src="https://cloud.githubusercontent.com/assets/15967809/17642771/7cd6a0c4-6171-11e6-87fb-915f6084d104.png"
+                    alt="men">
+
+                <div class="project-title">Random Quote Machine</div>
+            </a>
+            
+        </div>
+
+        <div class="card-container">
+            <a class="project-tile" href="https://codepen.io/FreeCodeCamp/pen/PNKdjo" target="blank">
+                <img src="https://cloud.githubusercontent.com/assets/15967809/17642772/7d02406c-6171-11e6-8c79-40a2933163dc.png"
+                    alt="men">
+
+                <div class="project-title">Javascript Calculator</div>
+            </a>
+
+            <a class="project-tile" href="https://codepen.io/FreeCodeCamp/pen/mVEJag" target="blank">
+                <img src="https://cloud.githubusercontent.com/assets/15967809/17642773/7d08cb94-6171-11e6-8c45-22e7cf64683e.png"
+                    alt="men">
+
+                <div class="project-title">Map Data Across the Globe</div>
+            </a>
+            
+        </div>
+
+        <div class="card-container">
+            <a class="project-tile" href="https://codepen.io/FreeCodeCamp/pen/wGqEga" target="blank">
+                <img src="https://cloud.githubusercontent.com/assets/15967809/17642774/7d091806-6171-11e6-8d47-ecf2f2833fe2.png"
+                    alt="men">
+
+                <div class="project-title">Wikipedia Viewer</div>
+            </a>
+            <a class="project-tile" href="https://codepen.io/FreeCodeCamp/pen/KzXQgy" target="blank">
+            
+            <img src="https://cloud.githubusercontent.com/assets/15967809/17642775/7d354304-6171-11e6-8b56-66eee4681d88.png"
+                    alt="men">
+
+                <div class="project-title">Tic Tac Toe Game</div>
+            </a>
+            
+        </div>
+            
+            <a href="https://codepen.io/FreeCodeCamp/" target="blank" id="show-all">Show All</a>
+
+    </div>
+
+    <div id="contacts">
+
+        <h1>Let's work together..</h1>
+        <p>how do you take your coffee?</p>
+
+        <div id="social-media">
+
+            <a href="https://facebook.com/freecodecamp">Facebook</a>
+            <a href="https://github.com/freecodecamp">Github</a>
+            <a href="https://twitter.com/freecodecamp">Twitter</a>
+            <a href="example@example.com">Send a mail</a>
+            <a href="tel:555-555-5555">Call me</a>
+
+
+
+        </div>
+    </div>
+
+    <footer>
+        **This is just a fake portfolio.. All the projects and contact details given are not real.. 
+        <p>
+                &copy Created for <a href="https://www.freecodecamp.com/">FreeCodeCamp</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
