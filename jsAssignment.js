@@ -1,5 +1,6 @@
 //First Question
 
+
 let numbers = [3,5,2,6,1,4,10,11,7]
 
 function secondLowestAndGreatest(num){
@@ -10,6 +11,7 @@ function secondLowestAndGreatest(num){
 }
 
 secondLowestAndGreatest(numbers);
+
 
 //Second Question
 
